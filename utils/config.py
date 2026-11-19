@@ -7,7 +7,8 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 OWNER_IDS = [253283008990150656] # ripmeep
 ARCANE_ID = 437808476106784770 # Arcane bot ID for meeplets on level up
-MEEPVILLE_CHANNEL_ID = 1527979003409989764 # L.E.S
+MEEPVILLE_CHANNEL_ID = 1558600527116501022
+#MEEPVILLE_CHANNEL_ID = 1512822872349868217 # DEBUG
 
 LEADERBOARD_BLACKLIST = [
   'acroes',
@@ -18,6 +19,9 @@ LEADERBOARD_BLACKLIST = [
 DB_PATH = "db/bom.db"
 KEYWORD_WORDLIST_PATH = "./keyword.txt"
 COGS_DIR = "./cogs"
+TRIVIA_URL="https://opentdb.com/api.php?amount=1&type=multiple"
+REBUS_DATASET="./rebus_dataset.csv"
+REBUS_IMAGE_DIR="./rebus_images"
 
 MEEPLET_SHOP = {
   "meep_backup": {
@@ -34,7 +38,7 @@ MEEPLET_SHOP = {
 
   "meep_rename": {
     "title": "Meep Rename",
-    "description": "You get to change Mayor Meep's server name for a FULL 24 hours - nothing offensive to anyone (unless it's meep himself, he can take it).",
+    "description": "You get to change Meep's server name for a FULL 24 hours - nothing offensive to anyone (unless it's meep himself, he can take it).",
     "cost": 15
   },
 
