@@ -21,6 +21,9 @@ class BoM(commands.Cog):
       return
 
     from_username = ctx.author.name
+    if username == from_username:
+      return
+
     from_balance = await bom_get_meeplets(from_username)
 
     if (from_balance < meeplets):

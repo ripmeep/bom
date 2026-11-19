@@ -1,4 +1,5 @@
 import asyncio
+from math import floor
 from discord.ext import commands
 from utils import *
 from utils.db.meeplets import *
@@ -10,7 +11,8 @@ class LuckyDigits(commands.Cog):
 
   @commands.Cog.listener()
   async def on_message(self, msg):
-    if "6969" in str(msg.id):
+    msg_id = str(msg.id)
+    if "6969" in msg_id[int(floor(len(msg_id) / 2)):]:
       await bom_add_meeplets(msg.author.name, self.reward)
       await msg.reply(embed=discord.Embed(description=f"🍀 This message is considered lucky by BoM. Have 💰 {str(self.reward)} meeplets 🍀"))
 
