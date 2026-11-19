@@ -16,7 +16,7 @@ class BoMBot(commands.Bot):
     intents = discord.Intents.default()
     intents.message_content = True
 
-    super().__init__(command_prefix="/bom ", intents=intents)
+    super().__init__(command_prefix="!bom ", intents=intents)
 
   async def setup_hook(self):
     for fname in os.listdir(utils.config.COGS_DIR):
