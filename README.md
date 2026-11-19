@@ -10,6 +10,8 @@ Anyway, you need to clone this, and then manually add the game files (keyword, r
 | -------- | ------ |
 | meep.jpg | Something |
 
+If you don't understand the above, just read the files in `/cogs/`, especially `/cogs/work.py`. The static `GenerateWork[work type]()` methods are responsible for that kinda stuff in `Work.Challenge`.
+
 Also, you need to add the token to the .env as it uses `dotenv` to import that. Don't upload that to github whatever you do otherwise some script kiddie might take the cake.
 
 I think that's it, apart from setting up the virtual env and installing the modules from `/requirements.txt` but you already know that.
