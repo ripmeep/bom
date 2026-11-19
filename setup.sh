@@ -3,5 +3,5 @@
 python3 -m venv .
 source bin/activate
 
-pip3 install discord.py python-dotenv aiosqlite
+pip3 install -r requirements.txt
 
